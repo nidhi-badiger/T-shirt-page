@@ -5,48 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customised T-shirts</title>
+
+    <style>
+      body {
+  background: linear-gradient(180.2deg, rgb(241, 253, 108) -6.9%, rgb(200, 236, 175) 76.7%);
+}
+
+h1.heading{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 50px;
+    font-style: oblique;
+}
+
+.text {
+  font-family:'Times New Roman', Times, serif;
+  font: size 20px;
+  font-weight: bold;
+  color:rgba(5, 10, 151, 0.813)
+}
+img{
+     height: 320px;  
+     width: 320px;
+     border: 4px solid rgb(15, 180, 18);
+
+      }
+
+input[type=text] {
+  width: 150px;
+  padding: 1px 10px;
+  margin: 8px 0;
+  /* box-sizing: border-box; */
+  background-color: #f8e7ff;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+  input[type=text]:focus {
+  border: 3px solid rgb(27, 212, 202);
+}
+
+.first {
+        padding: 20px 100px;
+        display: flex;
+        flex-direction: column;
+      }
+
+.second {
+        padding: 20px 100px;
+        display: flex;
+        flex-direction: column;
+      }
+.main {
+        padding: 50px 50px;
+        display: flex;
+      }
+
+
+    </style>
 </head>
 <body>
    <img src="https://m.media-amazon.com/images/I/61DPz-jSIhL._UX569_.jpg" width="300">
    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOIapkZHHEc76SE187H3Vu9iYwVINOKQl_EQ&usqp=CAU" width="300" alt="image">
    <img src="https://target.scene7.com/is/image/Target/GUEST_1aeb8006-dca7-4bab-b7a5-382b1a0be1ef" width="300"  alt="image">
    <img src="https://m.media-amazon.com/images/I/61hZlzUdooL._AC_UX385_.jpg" width="300"  alt="image">
-   <marquee><h1>DIY T-SHIRTS</h1></marquee>
+   <marquee><h1 class="heading">DIY  T-SHIRTS</h1></marquee>
 <br><br>
 
 <center>
-<h2>Customise your T-shirt</h2>
-<form method="get">
-Tagline on T-shirt:   <input type="text" id="tagline" value="Enter here" required>  <br><br>
-Image on T-shirt: <input type="file" required><br><br>
-Choose colour of your choice:   <input type="color" id="favcolor" name="favcolor" value="#00FF00"><br><br>
-No. of T-shirts:  <select id="quantity" >
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-  </select>
-<br><br><br>
 
-Please select the size:<br><br>
+<h2>Customise your T-shirt</h2>
+<div class="text">
+<form method="get">
+<div class="main">
+  <div class="first">
+    Tagline on T-shirt:   <input type="text" id="tagline" value="Enter here" required>  <br><br>
+    Choose colour of your choice:   <input type="color" id="favcolor" name="favcolor" value="#00FFFF"><br><br>
+    Please select the size:<br><br>
 <input type="radio" value="S">S
 <input type="radio" value="M">M
 <input type="radio" value="L">L
 <input type="radio" value="XL">XL
 <input type="radio" value="XXL">XXL
 <br><br>
+</div>
 
-Type of fit: <br><br>
+  <div class="second">
+    Image on T-shirt: <input type="file" required><br><br>
+    No. of T-shirts:  <select id="quantity" >
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  <br><br><br>
+  Type of fit: <br><br>
 <input type="checkbox" value="a">Slim fit
 <input type="checkbox" value="b">Mid fit
 <input type="checkbox" value="c">Oversized
 <br><br>
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
 <h2>Customer Details</h2>
 
@@ -60,6 +134,7 @@ Pincode: <input type="pincode"><br><br>
 <input type="reset" value="RESET">
 <input type="submit" value="ORDER NOW">
 </form>
+</div>
 </center>
 
 </body>
