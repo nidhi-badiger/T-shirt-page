@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customised T-shirts</title>
 
-    <style>
-      body {
+<style>
+      
+body {
   background: linear-gradient(180.2deg, rgb(241, 253, 108) -6.9%, rgb(200, 236, 175) 76.7%);
 }
 
@@ -17,6 +18,7 @@ h1.heading1{
     font-style: oblique;
     font-weight: bolder;
     color: darkblue;
+    background-color: rgb(115, 234, 18);
 }
 
 .heading2 {
@@ -31,6 +33,11 @@ h1.heading1{
   font-weight: bold;
   color:rgba(5, 10, 151, 0.813)
 }
+
+.text:active{
+  color: #FF00FF;
+}
+
 img{
      height: 320px;  
      width: 320px;
@@ -69,15 +76,21 @@ input[type=text] {
         /* display: flex; */
         align-content: flex-start;
         /* flex-direction: column; */
-        
+        text-align: justify;
       }
 
 .flex-item-2 {
         padding-top:10px;
         padding-left: 250px;
+        text-align: justify;
         /* align-content: flex-start; */
         /* flex-direction: column; */
       }
+
+#details {
+  padding-left: 400px;
+  text-align: justify;
+}
 
     </style>
 </head>
@@ -131,9 +144,11 @@ input[type=text] {
   </div>
 </div>
 
+<br>
 
 <h2 class="heading2">Customer Details</h2>
 
+<div class="customer-details" id="details">
 Full Name: <input type="name" ><br><br>
 Enter your E-mail id: <input type="email"> <br><br>
 Phone no. <input type="tel"><br><br>
@@ -144,6 +159,8 @@ Pincode: <input type="pincode"><br><br>
 <input type="reset" value="RESET">
 <input type="submit" value="ORDER NOW">
 </form>
+</div>
+
 </div>
 </center>
 
