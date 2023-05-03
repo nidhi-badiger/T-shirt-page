@@ -106,6 +106,26 @@ input[type=text] {
 
   gtag('config', 'G-L40XDLNK8S');
 </script>
+<script> 
+src="/main.js" 
+window.addEventListener('load', () => { 
+ registerSW();
+ });
+ 
+ // Register the Service Worker 
+ async function registerSW() { 
+ if ('serviceWorker' in navigator) { 
+ try { 
+ await navigator 
+ .serviceWorker 
+ .register('serviceworker.js');
+ } 
+ catch (e) { 
+ console.log('SW registration failed');
+ } 
+ } 
+ } 
+</script>
 <body>
    <img src="https://m.media-amazon.com/images/I/61DPz-jSIhL._UX569_.jpg" width="300">
    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOIapkZHHEc76SE187H3Vu9iYwVINOKQl_EQ&usqp=CAU" width="300" alt="image">
